@@ -1,0 +1,194 @@
+{
+	"id": "4ffad218-f404-4bd9-8e82-1d9ef0153771",
+	"name": "Britney's OpenAI",
+	"timestamp": "2023-06-19T16:15:21.309Z",
+	"collection_id": "21747995-ee88b222-935c-469b-9329-f174bc80d974",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 2,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-06-19T16:14:51.998Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "28e016a9-222d-4eeb-beab-771236933a9c",
+			"name": "List models",
+			"url": "https://api.openai.com/v1/models",
+			"time": 218,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				218
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b532a91c-5a73-4ca2-9015-083695ac6e62",
+			"name": "Retrieve model",
+			"url": "https://api.openai.com/v1/models/davinci",
+			"time": 72,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				72
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2a42fb58-9c9a-4386-8639-02254a4f3330",
+			"name": "Create completion",
+			"url": "https://api.openai.com/v1/completions",
+			"time": 2931,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2931
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b6d4b0d5-e3c6-4230-9467-b7b8622e82e9",
+			"name": "Create chat message completion",
+			"url": "https://api.openai.com/v1/chat/completions",
+			"time": 14878,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check if response is valid JSON": true
+			},
+			"testPassFailCounts": {
+				"Check if response is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14878
+			],
+			"allTests": [
+				{
+					"Check if response is valid JSON": true
+				}
+			]
+		},
+		{
+			"id": "6a9ce9c1-ade8-4861-8c67-02898fe4475c",
+			"name": "Create edit",
+			"url": "https://api.openai.com/v1/edits",
+			"time": 775,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check if response is valid JSON": true
+			},
+			"testPassFailCounts": {
+				"Check if response is valid JSON": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				775
+			],
+			"allTests": [
+				{
+					"Check if response is valid JSON": true
+				}
+			]
+		},
+		{
+			"id": "2a7452fb-3902-4ae7-96f1-278140e4acd1",
+			"name": "Create image",
+			"url": "https://api.openai.com/v1/images/generations",
+			"time": 9895,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9895
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "25c6dd66-dc06-4251-818b-f68d8f15494e",
+			"name": "Create embeddings",
+			"url": "https://api.openai.com/v1/embeddings",
+			"time": 106,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				106
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 28875,
+	"collection": {
+		"requests": [
+			{
+				"id": "28e016a9-222d-4eeb-beab-771236933a9c",
+				"method": "GET"
+			},
+			{
+				"id": "b532a91c-5a73-4ca2-9015-083695ac6e62",
+				"method": "GET"
+			},
+			{
+				"id": "2a42fb58-9c9a-4386-8639-02254a4f3330",
+				"method": "POST"
+			},
+			{
+				"id": "b6d4b0d5-e3c6-4230-9467-b7b8622e82e9",
+				"method": "POST"
+			},
+			{
+				"id": "6a9ce9c1-ade8-4861-8c67-02898fe4475c",
+				"method": "POST"
+			},
+			{
+				"id": "2a7452fb-3902-4ae7-96f1-278140e4acd1",
+				"method": "POST"
+			},
+			{
+				"id": "25c6dd66-dc06-4251-818b-f68d8f15494e",
+				"method": "POST"
+			}
+		]
+	}
+}
